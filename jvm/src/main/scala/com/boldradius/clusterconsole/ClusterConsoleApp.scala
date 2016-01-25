@@ -34,7 +34,7 @@ trait ClusterConsoleAppBase extends LogF { self: App =>
 
   val config = akkaConf.withFallback(ConfigFactory.load())
 
-  val clusterConsoleSystem = ActorSystem("ClusterConsoleSystem", config)
+  val clusterConsoleSystem = ActorSystem("SportCenter", config) //ClusterConsoleSystem
 
   val router: ActorRef = clusterConsoleSystem.actorOf(Props[RouterActor], "router")
 
