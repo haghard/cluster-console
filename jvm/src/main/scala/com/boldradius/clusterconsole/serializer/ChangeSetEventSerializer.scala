@@ -5,9 +5,9 @@ import akka.serialization.Serializer
 
 
 class ChangeSetEventSerializer(system: ActorSystem) extends Serializer {
-  override def identifier: Int = ???
+  override def identifier: Int = 18
 
-  override def includeManifest: Boolean = ???
+  override def includeManifest: Boolean = false
 
   override def fromBinary(bytes: Array[Byte], manifest: Option[Class[_]]): AnyRef = ???
 

@@ -7,9 +7,9 @@ import akka.serialization.Serializer
   * Created by haghard on 25/01/16.
   */
 class ResultAddedEventSerializer(system: ActorSystem) extends Serializer {
-  override def identifier: Int = ???
+  override def identifier: Int = 19
 
-  override def includeManifest: Boolean = ???
+  override def includeManifest: Boolean = true
 
   override def fromBinary(bytes: Array[Byte], manifest: Option[Class[_]]): AnyRef = ???
 

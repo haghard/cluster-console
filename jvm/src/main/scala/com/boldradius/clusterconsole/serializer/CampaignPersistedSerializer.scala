@@ -5,9 +5,9 @@ import akka.serialization.Serializer
 
 
 class CampaignPersistedSerializer(system: ActorSystem) extends Serializer {
-  override def identifier: Int = ???
+  override def identifier: Int = 20
 
-  override def includeManifest: Boolean = ???
+  override def includeManifest: Boolean = true
 
   override def fromBinary(bytes: Array[Byte], manifest: Option[Class[_]]): AnyRef = ???
 
