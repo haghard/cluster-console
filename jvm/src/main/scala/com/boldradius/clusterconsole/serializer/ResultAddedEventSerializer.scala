@@ -3,9 +3,6 @@ package com.boldradius.clusterconsole.serializer
 import akka.actor.ActorSystem
 import akka.serialization.Serializer
 
-/**
-  * Created by haghard on 25/01/16.
-  */
 class ResultAddedEventSerializer(system: ActorSystem) extends Serializer {
   override def identifier: Int = 19
 
